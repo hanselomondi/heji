@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Heji
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+**Heji** is a blockchain-based platform designed as a B2B solution for law firms to manage the creation, updating, and execution of last testaments and wills, with a focus on preventing fraud.
 
-### `npm start`
+Built for the UZH DDiB '25 Summer School (Off-Campus in Cape Town), this project leverages blockchain technology to ensyre the authenticity, security, and immutability of wills, addressing issues like forgery, tampering, and disputes over validity. The system uses wallet-based digital signatures to verify identities and automate processes via smart contracts, providing a secure and efficient tool for legal professionals.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Run `Heji` on Your Local
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+To run the system, ensure you have the following in your environment:
+   - Node.js
+   - Git
 
-### `npm test`
+### Running the system
+Follow these steps to run Heji:
+- Clone the repository:
+    ```$ git clone git@github.com:hanselomondi/heji.git```
+- Navigate to the cloned repository:
+    ```$ cd heji```
+- In your terminal run the command below:
+    ```$ npm run```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Key Features
+1. **Will Creation:** Lawyers help the testator draft wills, specifying beneficiaries, executors, and in some cases, guardians.
+2. **Witness Invitation and Signing:** Lawyers and the testator invite witnesses, who sign remotely using their wallet addresses, ensuring legal validation.
+3. **Will Updating:** Testators can update wills with verified signatures, maintaining an auditable versino history.
+4. **Execution:** Smart contracts unlock the will for the executor upon the testator's death, streamlining probate.
+5. **Fraud Prevention:** Wallet-based signatures and blockchainimmutability prevent unauthorised changes or forgeries.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Target Users
+The primary target user is **Law Firms**, who provide will services for their clients.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## System Architecture
+Heji consists fo the following components:
+### 1. Frontend
+This component forms the user interface.
+Built using `React` and `Tailwind CSS` for a modern, responsive UI.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Pages: Login/Registration page, Will Creation, Witness Signing, Will Update, Executor Dashboard
 
-### `npm run eject`
+### 2. Backend
+Simulated backend logic to handle form submissions, user authentication and signature storage.
+In a full implementation, a Node.js/Express backend would manage API requests and blockahin interactions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 3. Blockchain
+Provides the platform on which created wills will be stored and records of any operations performed by them, including details of the involved parties, are recorded.
