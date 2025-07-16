@@ -21,7 +21,7 @@ Follow these steps to run Heji:
 - Navigate to the cloned repository:
     ```$ cd heji```
 - In your terminal run the command below:
-    ```$ npm run```
+    ```$ npm run dev```
 
 
 ## Key Features
@@ -38,7 +38,7 @@ The primary target user is **Law Firms**, who provide will services for their cl
 Heji consists fo the following components:
 ### 1. Frontend
 This component forms the user interface.
-Built using `React` and `Tailwind CSS` for a modern, responsive UI.
+Built using `Next.js` and `Tailwind CSS` for a modern, responsive UI.
 
 Pages: Login/Registration page, Will Creation, Witness Signing, Will Update, Executor Dashboard
 
