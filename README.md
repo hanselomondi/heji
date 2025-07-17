@@ -20,6 +20,8 @@ Follow these steps to run Heji:
     ```$ git clone git@github.com:hanselomondi/heji.git```
 - Navigate to the cloned repository:
     ```$ cd heji```
+- Install all dependencies:
+    ```$ npm install```
 - In your terminal run the command below:
     ```$ npm run dev```
 
