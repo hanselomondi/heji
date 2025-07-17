@@ -1,3 +1,6 @@
+///HEDERA CLIENT IMPORT\\\
+//Sets up client and testnet\\
+
 import { Client, PrivateKey, AccountId } from "@hashgraph/sdk";
 
 const OPERATOR_ID = AccountId.fromString(process.env.OPERATOR_ID!);

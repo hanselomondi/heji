@@ -1,3 +1,6 @@
+///NFT MINTING SERVICE\\\
+///HANDLES NFT MINTING AND HASHING OF METADATA\\\
+
 import { Request, Response } from "express";
 import { TokenMintTransaction, TokenId, Hbar } from "@hashgraph/sdk";
 import { client } from '../config/hederaClient';
@@ -6,14 +9,11 @@ import { WillMetadata} from "../types/will";
 
 const WILL_TOKEN_ID = TokenId.fromString(process.env.WILL_TOKEN_ID!);
 
+//Will handling\\
 export async function mintWillHandler(req: Request, res: Response) {
   try {
     const {
-      testatorName,
-      assets,
-      beneficiaries,
-      executor,
-      guardians
+      testatorName, assets, beneficiaries, executor, guardians
     } = req.body;
 
     if (!testatorName || !assets || !beneficiaries || !executor) {

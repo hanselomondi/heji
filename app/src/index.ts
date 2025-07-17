@@ -1,3 +1,5 @@
+///ENTRANCE POINT FOR BACKEND\\\
+
 import express from "express";
 import dotenv from "dotenv";
 import willsRoutes from './routes/wills';

@@ -1,3 +1,7 @@
+///TOKEN CREATION SCRIPT
+///ONE TIME USE
+///LEFT FOR ARCHIVE PURPOSES
+
 import {
     Client, 
     PrivateKey,
